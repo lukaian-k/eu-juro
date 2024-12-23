@@ -1,0 +1,90 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #ff6f91;
+  margin-bottom: 20px;
+}
+
+.letter {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #555;
+  word-wrap: break-word;
+}
+
+.line {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .letter {
+    font-size: 1em;
+  }
+}
+
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.audio-controls button {
+  padding: 10px 20px;
+  background-color: #ff6f91;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.audio-controls button:hover {
+  background-color: #ff4a6e;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
